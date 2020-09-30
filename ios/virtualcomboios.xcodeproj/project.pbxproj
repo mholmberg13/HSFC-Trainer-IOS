@@ -14,6 +14,16 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		96905EF65AED1B983A6B3ABC /* libPods-virtualcomboios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-virtualcomboios.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C19A03E32523A3220050111E /* _Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03E12523A3220050111E /* _Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03E42523A3220050111E /* _Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03E22523A3220050111E /* _Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03EE2523A3390050111E /* Left Body! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03E62523A3390050111E /* Left Body! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03EF2523A3390050111E /* Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03E72523A3390050111E /* Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03F02523A3390050111E /* Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03E82523A3390050111E /* Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03F12523A3390050111E /* JAB! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03E92523A3390050111E /* JAB! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03F22523A3390050111E /* Right Body! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03EA2523A3390050111E /* Right Body! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03F32523A3390050111E /* Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03EB2523A3390050111E /* Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03F42523A3390050111E /* CROSS! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03EC2523A3390050111E /* CROSS! - Salli - En - US Amazon Sep-28-2020.mp3 */; };
+		C19A03F52523A3390050111E /* Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C19A03ED2523A3390050111E /* Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,16 @@
 		7A4D352CD337FB3A3BF06240 /* Pods-virtualcomboios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-virtualcomboios.release.xcconfig"; path = "Target Support Files/Pods-virtualcomboios/Pods-virtualcomboios.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = virtualcomboios/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C19A03E12523A3220050111E /* _Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "_Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/_Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03E22523A3220050111E /* _Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "_Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/_Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03E62523A3390050111E /* Left Body! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Left Body! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/Left Body! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03E72523A3390050111E /* Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03E82523A3390050111E /* Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03E92523A3390050111E /* JAB! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "JAB! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/JAB! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03EA2523A3390050111E /* Right Body! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Right Body! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/Right Body! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03EB2523A3390050111E /* Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03EC2523A3390050111E /* CROSS! - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "CROSS! - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/CROSS! - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
+		C19A03ED2523A3390050111E /* Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3"; path = "../../../../../Downloads/Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +102,16 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C19A03EC2523A3390050111E /* CROSS! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03E92523A3390050111E /* JAB! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03E62523A3390050111E /* Left Body! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03E82523A3390050111E /* Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03ED2523A3390050111E /* Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03EA2523A3390050111E /* Right Body! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03E72523A3390050111E /* Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03EB2523A3390050111E /* Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03E12523A3220050111E /* _Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3 */,
+				C19A03E22523A3220050111E /* _Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3 */,
 				13B07FAE1A68108700A75B9A /* virtualcomboios */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -179,10 +209,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19A03E42523A3220050111E /* _Right Uppercut - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				C19A03F12523A3390050111E /* JAB! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
+				C19A03F42523A3390050111E /* CROSS! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
+				C19A03F52523A3390050111E /* Left Overhand!  - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				C19A03EE2523A3390050111E /* Left Body! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
+				C19A03E32523A3220050111E /* _Left Uppercut! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				C19A03EF2523A3390050111E /* Right Hook! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
+				C19A03F32523A3390050111E /* Right Overhand! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
+				C19A03F22523A3390050111E /* Right Body! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
+				C19A03F02523A3390050111E /* Left Hook! - Salli - En - US Amazon Sep-28-2020.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
