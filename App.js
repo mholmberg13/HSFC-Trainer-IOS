@@ -13,9 +13,79 @@ let jab = new Sound(require('./sounds/jab.mp3'),
       alert('error' + error.message);
       return;
     }
-    
-  })
+})
 
+let cross = new Sound(require('./sounds/cross.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let leftHook = new Sound(require('./sounds/lefthook.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let rightHook = new Sound(require('./sounds/righthook.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let leftUpper = new Sound(require('./sounds/leftupper.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let rightUpper = new Sound(require('./sounds/rightupper.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let leftOver = new Sound(require('./sounds/leftover.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let rightOver = new Sound(require('./sounds/rightover.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let leftBody = new Sound(require('./sounds/leftbody.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
+
+let rightBody = new Sound(require('./sounds/rightbody.mp3'),
+  (error, sound) => {
+    if (error) {
+      alert('error' + error.message);
+      return;
+    }
+})
 
 class App extends React.Component {
 
@@ -94,45 +164,157 @@ class App extends React.Component {
       })
     }
     
+    // if (this.state.strike_one === "JAB") {
+    //   this.handlePlaySound()
+    // }
+
+    // if (this.state.strike_two === "JAB") {
+    //   this.handlePlaySound()
+    // }
+
+    // if (this.state.strike_three === "JAB") {
+    //   this.handlePlaySound()
+    // }
+
+    this.handleCheckFirstState()
+
+  }
+
+
+  handleCheckFirstState = () => {
     if (this.state.strike_one === "JAB") {
-      this.handlePlaySound()
+      jab.play()
     }
 
-    if (this.state.strike_two === "JAB") {
-      this.handlePlaySound()
+    if (this.state.strike_one === "CROSS") {
+      cross.play()
     }
 
-    if (this.state.strike_three === "JAB") {
-      this.handlePlaySound()
+    if (this.state.strike_one === "LEFT HOOK") {
+      leftHook.play()
     }
 
+    if (this.state.strike_one === "RIGHT HOOK") {
+      rightHook.play()
+    }
+
+    if (this.state.strike_one === "LEFT UPPERCUT") {
+      leftUpper.play()
+    }
+
+    if (this.state.strike_one === "RIGHT UPPERCUT") {
+      rightUpper.play()
+    }
+
+    if (this.state.strike_one === "LEFT OVERHAND") {
+      leftOver.play()
+    }
+
+    if (this.state.strike_one === "RIGHT OVERHAND") {
+      rightOver.play()
+    }
+
+    if (this.state.strike_one === "LEFT BODY") {
+      leftBody.play()
+    }
+
+    if (this.state.strike_one === "RIGHT BODY") {
+      rightBody.play()
+    }
   }
-
-  handlePlaySound = () => {
-    jab.play()
     
-    console.log("jab")
-  }
-
-  handleCheckState = () => {
-    if (this.state.strike_one === "JAB") {
-      this.handlePlaySound()
-    }
-
+  handleCheckSecondState = () => {
     if (this.state.strike_two === "JAB") {
-      this.handlePlaySound()
+      jab.play()
     }
 
-    if (this.state.strike_three === "JAB") {
-      this.handlePlaySound()
+    if (this.state.strike_two === "CROSS") {
+      cross.play()
+    }
+
+    if (this.state.strike_two === "LEFT HOOK") {
+      leftHook.play()
+    }
+
+    if (this.state.strike_two === "RIGHT HOOK") {
+      rightHook.play()
+    }
+
+    if (this.state.strike_two === "LEFT UPPERCUT") {
+      leftUpper.play()
+    }
+
+    if (this.state.strike_two === "RIGHT UPPERCUT") {
+      rightUpper.play()
+    }
+
+    if (this.state.strike_two === "LEFT OVERHAND") {
+      leftOver.play()
+    }
+
+    if (this.state.strike_two === "RIGHT OVERHAND") {
+      rightOver.play()
+    }
+
+    if (this.state.strike_two === "LEFT BODY") {
+      leftBody.play()
+    }
+
+    if (this.state.strike_two === "RIGHT BODY") {
+      rightBody.play()
     }
     
   }
+
+  handleCheckThirdState = () => {
+    if (this.state.strike_three === "JAB") {
+      jab.play()
+    }
+
+    if (this.state.strike_three === "CROSS") {
+      cross.play()
+    }
+
+    if (this.state.strike_three === "LEFT HOOK") {
+      leftHook.play()
+    }
+
+    if (this.state.strike_three === "RIGHT HOOK") {
+      rightHook.play()
+    }
+
+    if (this.state.strike_three === "LEFT UPPERCUT") {
+      leftUpper.play()
+    }
+
+    if (this.state.strike_three === "RIGHT UPPERCUT") {
+      rightUpper.play()
+    }
+
+    if (this.state.strike_three === "LEFT OVERHAND") {
+      leftOver.play()
+    }
+
+    if (this.state.strike_three === "RIGHT OVERHAND") {
+      rightOver.play()
+    }
+
+    if (this.state.strike_three === "LEFT BODY") {
+      leftBody.play()
+    }
+
+    if (this.state.strike_three === "RIGHT BODY") {
+      rightBody.play()
+    }
+    
+  }
+
+
 
 
   handleStart = () => {
     this.handleNewCombo()
-    this.intervalId = setInterval(this.handleNewCombo, 3000)
+    this.intervalId = setInterval(this.handleNewCombo, 4000)
     // this.intervalIdTwo = setInterval(this.handleCheckState, 3000)
   }
 
@@ -204,6 +386,12 @@ class App extends React.Component {
       strike_four: "",
       strike_five: ""
     })
+  }
+
+  componentDidUpdate() {
+    this.handleCheckFirstState()
+    this.handleCheckSecondState()
+    this.handleCheckThirdState()
   }
 
   render () {
