@@ -94,14 +94,23 @@ class App extends React.Component {
       })
     }
     
-    this.handleCheckState()
+    if (this.state.strike_one === "JAB") {
+      this.handlePlaySound()
+    }
+
+    if (this.state.strike_two === "JAB") {
+      this.handlePlaySound()
+    }
+
+    if (this.state.strike_three === "JAB") {
+      this.handlePlaySound()
+    }
 
   }
 
   handlePlaySound = () => {
-    jab.play(() => {
-      jab.release()
-    })
+    jab.play()
+    
     console.log("jab")
   }
 
@@ -124,7 +133,7 @@ class App extends React.Component {
   handleStart = () => {
     this.handleNewCombo()
     this.intervalId = setInterval(this.handleNewCombo, 3000)
-    this.intervalIdTwo = setInterval(this.handleCheckState, 3000)
+    // this.intervalIdTwo = setInterval(this.handleCheckState, 3000)
   }
 
   handleStop = () => {
