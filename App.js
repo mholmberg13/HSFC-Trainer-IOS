@@ -6,6 +6,7 @@ import Start from './components/Start.js'
 import Display from './components/Display.js'
 import Filters from './components/Filters.js'
 
+let strikes = ["JAB", "CROSS", "LEFT HOOK", "RIGHT HOOK", "LEFT UPPERCUT", "RIGHT UPPERCUT", "LEFT OVERHAND", "RIGHT OVERHAND", "LEFT BODY", "RIGHT BODY"]
 
 let jab = new Sound(require('./sounds/jab.mp3'),
   (error, sound) => {
@@ -122,16 +123,35 @@ class App extends React.Component {
 
   // }
 
-  
-
-  handleNewCombo = () => {
-    let strikes = ["JAB", "CROSS", "LEFT HOOK", "RIGHT HOOK", "LEFT UPPERCUT", "RIGHT UPPERCUT", "LEFT OVERHAND", "RIGHT OVERHAND", "LEFT BODY", "RIGHT BODY"]
+  handleSetFirstState = () => {
     this.setState({
-      strike_one: strikes[Math.floor(Math.random() * strikes.length)],
-      strike_two: strikes[Math.floor(Math.random() * strikes.length)],
+      strike_one: strikes[Math.floor(Math.random() * strikes.length)]
+    })
+  }
+
+  handleSetSecondState = () => {
+    this.setState({
+      strike_two: strikes[Math.floor(Math.random() * strikes.length)]
+    })
+  }
+
+  handleSetThirdState = () => {
+    this.setState({
       strike_three: strikes[Math.floor(Math.random() * strikes.length)]
     })
+  }
 
+  handleNewCombo = () => {
+    // let strikes = ["JAB", "CROSS", "LEFT HOOK", "RIGHT HOOK", "LEFT UPPERCUT", "RIGHT UPPERCUT", "LEFT OVERHAND", "RIGHT OVERHAND", "LEFT BODY", "RIGHT BODY"]
+    // this.setState({
+    //   strike_one: strikes[Math.floor(Math.random() * strikes.length)],
+    //   strike_two: strikes[Math.floor(Math.random() * strikes.length)],
+    //   strike_three: strikes[Math.floor(Math.random() * strikes.length)]
+    // })
+
+    this.handleSetFirstState()
+    this.handleSetSecondState()
+    this.handleSetThirdState()
 
     if (this.state.four_checked === true) {
       this.handleFourCombo()
@@ -176,97 +196,220 @@ class App extends React.Component {
     //   this.handlePlaySound()
     // }
 
-    this.handleCheckFirstState()
+    // this.handleCheckFirstState()
 
   }
 
 
   handleCheckFirstState = () => {
+
     if (this.state.strike_one === "JAB") {
-      jab.play()
+      jab.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "CROSS") {
-      cross.play()
+      cross.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "LEFT HOOK") {
-      leftHook.play()
+      leftHook.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "RIGHT HOOK") {
-      rightHook.play()
+      rightHook.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "LEFT UPPERCUT") {
-      leftUpper.play()
+      leftUpper.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "RIGHT UPPERCUT") {
-      rightUpper.play()
+      rightUpper.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "LEFT OVERHAND") {
-      leftOver.play()
+      leftOver.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "RIGHT OVERHAND") {
-      rightOver.play()
+      rightOver.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "LEFT BODY") {
-      leftBody.play()
+      leftBody.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_one === "RIGHT BODY") {
-      rightBody.play()
+      rightBody.play((success) => {
+        if (success) {
+          this.handleCheckSecondState()
+        } else {
+          console.log("error")
+        }
+      })
     }
   }
     
-  handleCheckSecondState = () => {
+  handleCheckSecondState = async () => {
+    
     if (this.state.strike_two === "JAB") {
-      jab.play()
+      jab.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "CROSS") {
-      cross.play()
+      cross.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "LEFT HOOK") {
-      leftHook.play()
+      leftHook.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "RIGHT HOOK") {
-      rightHook.play()
+      rightHook.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "LEFT UPPERCUT") {
-      leftUpper.play()
+      leftUpper.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "RIGHT UPPERCUT") {
-      rightUpper.play()
+      rightUpper.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "LEFT OVERHAND") {
-      leftOver.play()
+      leftOver.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "RIGHT OVERHAND") {
-      rightOver.play()
+      rightOver.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_two === "LEFT BODY") {
-      leftBody.play()
+      leftBody.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        } 
+      })
     }
 
     if (this.state.strike_two === "RIGHT BODY") {
-      rightBody.play()
+      rightBody.play((success) => {
+        if (success) {
+          this.handleCheckThirdState()
+        } else {
+          console.log("error")
+        }
+      })
     }
-    
+     
   }
 
-  handleCheckThirdState = () => {
+  handleCheckThirdState = async () => {
+
     if (this.state.strike_three === "JAB") {
       jab.play()
     }
@@ -308,8 +451,6 @@ class App extends React.Component {
     }
     
   }
-
-
 
 
   handleStart = () => {
@@ -390,8 +531,8 @@ class App extends React.Component {
 
   componentDidUpdate() {
     this.handleCheckFirstState()
-    this.handleCheckSecondState()
-    this.handleCheckThirdState()
+    // setTimeout(this.handleCheckSecondState, 1200) 
+    // setTimeout(this.handleCheckThirdState, 2200)
   }
 
   render () {
