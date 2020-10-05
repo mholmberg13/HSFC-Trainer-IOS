@@ -98,7 +98,8 @@ class App extends React.Component {
     strike_five: "",
     four_checked: false,
     five_checked: false,
-    combo_length: 3
+    combo_length: 3,
+    started: false
   }
 
   // PlayLocalSoundFile = () =>{
@@ -197,6 +198,8 @@ class App extends React.Component {
     // }
 
     // this.handleCheckFirstState()
+    
+    
 
   }
 
@@ -411,57 +414,400 @@ class App extends React.Component {
   handleCheckThirdState = async () => {
 
     if (this.state.strike_three === "JAB") {
-      jab.play()
+      jab.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+           setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "CROSS") {
-      cross.play()
+      cross.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "LEFT HOOK") {
-      leftHook.play()
+      leftHook.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "RIGHT HOOK") {
-      rightHook.play()
+      rightHook.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "LEFT UPPERCUT") {
-      leftUpper.play()
+      leftUpper.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "RIGHT UPPERCUT") {
-      rightUpper.play()
+      rightUpper.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "LEFT OVERHAND") {
-      leftOver.play()
+      leftOver.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "RIGHT OVERHAND") {
-      rightOver.play()
+      rightOver.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "LEFT BODY") {
-      leftBody.play()
+      leftBody.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
     }
 
     if (this.state.strike_three === "RIGHT BODY") {
-      rightBody.play()
+      rightBody.play((success) => {
+        if (success) {
+          this.handleCheckFourthState()
+          if (this.state.combo_length === 3) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+    
+  }
+
+  handleCheckFourthState = async () => {
+
+    if (this.state.strike_four === "JAB") {
+      jab.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "CROSS") {
+      cross.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "LEFT HOOK") {
+      leftHook.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "RIGHT HOOK") {
+      rightHook.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "LEFT UPPERCUT") {
+      leftUpper.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "RIGHT UPPERCUT") {
+      rightUpper.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "LEFT OVERHAND") {
+      leftOver.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "RIGHT OVERHAND") {
+      rightOver.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "LEFT BODY") {
+      leftBody.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_four === "RIGHT BODY") {
+      rightBody.play((success) => {
+        if (success) {
+          this.handleCheckFifthState()
+          if (this.state.combo_length === 4) {
+            setTimeout(this.handleNewCombo, 1000)
+          }
+        } else {
+          console.log("error")
+        }
+      })
+    }
+    
+  }
+
+  handleCheckFifthState = async () => {
+
+    if (this.state.strike_five === "JAB") {
+      jab.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "CROSS") {
+      cross.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "LEFT HOOK") {
+      leftHook.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "RIGHT HOOK") {
+      rightHook.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "LEFT UPPERCUT") {
+      leftUpper.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "RIGHT UPPERCUT") {
+      rightUpper.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "LEFT OVERHAND") {
+      leftOver.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "RIGHT OVERHAND") {
+      rightOver.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "LEFT BODY") {
+      leftBody.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
+    }
+
+    if (this.state.strike_five === "RIGHT BODY") {
+      rightBody.play((success) => {
+        if (success) {
+          setTimeout(this.handleNewCombo, 1000)
+        } else {
+          console.log("error")
+        }
+      })
     }
     
   }
 
 
   handleStart = () => {
+    this.setState({
+      started: true
+    })
+    
     this.handleNewCombo()
-    this.intervalId = setInterval(this.handleNewCombo, 4000)
-    // this.intervalIdTwo = setInterval(this.handleCheckState, 3000)
+    
+
+    // if (this.state.combo_length === 3) {
+    // this.intervalId = setInterval(this.handleNewCombo, 4000)
+    // }
+    // if (this.state.combo_length === 4) {
+    //   this.intervalId = setInterval(this.handleNewCombo, 4800)
+    // }
+    // if (this.state.combo_length === 5) {
+    //     this.intervalId = setInterval(this.handleNewCombo, 5400)
+    // }
+
   }
 
   handleStop = () => {
-    clearInterval(this.intervalId)
-    clearInterval(this.intervalIdTwo)
+    // clearInterval(this.intervalId)
+    // clearInterval(this.intervalIdTwo)
+    this.handleReset()
   }
 
   // toggleThreeCheck = () => {
