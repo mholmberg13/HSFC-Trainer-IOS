@@ -15,7 +15,6 @@ class Start extends React.Component {
 
     handleStopCombined = () => {
         this.props.handleStop()
-        this.props.handleReset()
         this.handleSwitch()
     }
 

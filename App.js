@@ -98,8 +98,8 @@ class App extends React.Component {
     strike_five: "",
     four_checked: false,
     five_checked: false,
-    combo_length: 3,
-    started: false
+    combo_length: 3
+    // started: false
   }
 
   // PlayLocalSoundFile = () =>{
@@ -418,7 +418,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-           setTimeout(this.handleNewCombo, 1000)
+           if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -431,7 +435,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -444,7 +452,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -457,7 +469,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -470,7 +486,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -483,7 +503,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -496,7 +520,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -509,7 +537,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -522,7 +554,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -535,7 +571,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFourthState()
           if (this.state.combo_length === 3) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -552,7 +592,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -565,7 +609,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -578,7 +626,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -591,7 +643,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -604,7 +660,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -617,7 +677,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -630,7 +694,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -643,7 +711,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -656,7 +728,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -669,7 +745,11 @@ class App extends React.Component {
         if (success) {
           this.handleCheckFifthState()
           if (this.state.combo_length === 4) {
-            setTimeout(this.handleNewCombo, 1000)
+            if (this.state.strike_one === "") {
+            return("")
+          } else {
+          setTimeout(this.handleNewCombo, 1000)
+          }
           }
         } else {
           console.log("error")
@@ -684,7 +764,11 @@ class App extends React.Component {
     if (this.state.strike_five === "JAB") {
       jab.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -694,7 +778,11 @@ class App extends React.Component {
     if (this.state.strike_five === "CROSS") {
       cross.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -704,7 +792,11 @@ class App extends React.Component {
     if (this.state.strike_five === "LEFT HOOK") {
       leftHook.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -714,7 +806,11 @@ class App extends React.Component {
     if (this.state.strike_five === "RIGHT HOOK") {
       rightHook.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -724,7 +820,11 @@ class App extends React.Component {
     if (this.state.strike_five === "LEFT UPPERCUT") {
       leftUpper.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -734,7 +834,11 @@ class App extends React.Component {
     if (this.state.strike_five === "RIGHT UPPERCUT") {
       rightUpper.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -744,7 +848,11 @@ class App extends React.Component {
     if (this.state.strike_five === "LEFT OVERHAND") {
       leftOver.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -754,7 +862,11 @@ class App extends React.Component {
     if (this.state.strike_five === "RIGHT OVERHAND") {
       rightOver.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -764,7 +876,11 @@ class App extends React.Component {
     if (this.state.strike_five === "LEFT BODY") {
       leftBody.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -774,7 +890,11 @@ class App extends React.Component {
     if (this.state.strike_five === "RIGHT BODY") {
       rightBody.play((success) => {
         if (success) {
+          if (this.state.strike_one === "") {
+            return("")
+          } else {
           setTimeout(this.handleNewCombo, 1000)
+          }
         } else {
           console.log("error")
         }
@@ -785,37 +905,23 @@ class App extends React.Component {
 
 
   handleStart = () => {
-    this.setState({
-      started: true
-    })
+    // this.setState({
+    //   started: true
+    // })
     
     this.handleNewCombo()
-    
-
-    // if (this.state.combo_length === 3) {
-    // this.intervalId = setInterval(this.handleNewCombo, 4000)
-    // }
-    // if (this.state.combo_length === 4) {
-    //   this.intervalId = setInterval(this.handleNewCombo, 4800)
-    // }
-    // if (this.state.combo_length === 5) {
-    //     this.intervalId = setInterval(this.handleNewCombo, 5400)
-    // }
 
   }
 
   handleStop = () => {
-    // clearInterval(this.intervalId)
-    // clearInterval(this.intervalIdTwo)
-    this.handleReset()
+    this.setState({
+      strike_one: "",
+      strike_two: "",
+      strike_three: "",
+      strike_four: "",
+      strike_five: ""
+    })
   }
-
-  // toggleThreeCheck = () => {
-  //   this.setState({
-  //     four_checked: false,
-  //     five_checked: false
-  //   })
-  // }
 
   toggleFourCheck = () => {
     if (this.state.four_checked === false) {
@@ -862,16 +968,6 @@ class App extends React.Component {
   handleFiveCombo = () => {
     this.setState({
       combo_length: Math.floor(Math.random() * 3) + 3
-    })
-  }
-
-  handleReset = () => {
-    this.setState({
-      strike_one: "",
-      strike_two: "",
-      strike_three: "",
-      strike_four: "",
-      strike_five: ""
     })
   }
 
