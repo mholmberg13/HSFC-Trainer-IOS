@@ -98,31 +98,9 @@ class App extends React.Component {
     strike_five: "",
     four_checked: false,
     five_checked: false,
-    combo_length: 3
-    // started: false
+    combo_length: 3,
+    started: false
   }
-
-  // PlayLocalSoundFile = () =>{
-  //   Sound.setCategory('Playback');
-
-  //   var mySound = new Sound('jab.mp3',Sound.MAIN_BUNDLE,(error)=>{
-  //     if(error){
-  //     console.log('Error loading sound: ' + error);
-  //     return;
-  //     }else{
-  //     mySound.play((success)=>{
-  //     if(success){
-  //     console.log('Sound playing')
-  //     }else{
-  //     console.log('Issue playing file');
-  //     }
-  //     })
-  //     }
-  //     });
-  //     mySound.setVolume(0.9);
-  //     mySound.release();
-
-  // }
 
   handleSetFirstState = () => {
     this.setState({
@@ -143,12 +121,6 @@ class App extends React.Component {
   }
 
   handleNewCombo = () => {
-    // let strikes = ["JAB", "CROSS", "LEFT HOOK", "RIGHT HOOK", "LEFT UPPERCUT", "RIGHT UPPERCUT", "LEFT OVERHAND", "RIGHT OVERHAND", "LEFT BODY", "RIGHT BODY"]
-    // this.setState({
-    //   strike_one: strikes[Math.floor(Math.random() * strikes.length)],
-    //   strike_two: strikes[Math.floor(Math.random() * strikes.length)],
-    //   strike_three: strikes[Math.floor(Math.random() * strikes.length)]
-    // })
 
     this.handleSetFirstState()
     this.handleSetSecondState()
@@ -185,22 +157,6 @@ class App extends React.Component {
       })
     }
     
-    // if (this.state.strike_one === "JAB") {
-    //   this.handlePlaySound()
-    // }
-
-    // if (this.state.strike_two === "JAB") {
-    //   this.handlePlaySound()
-    // }
-
-    // if (this.state.strike_three === "JAB") {
-    //   this.handlePlaySound()
-    // }
-
-    // this.handleCheckFirstState()
-    
-    
-
   }
 
 
