@@ -159,6 +159,15 @@ class App extends React.Component {
     
   }
 
+  handleStartSwitch = () => {
+
+    this.state.started ? this.setState({started: false}) : this.setState({started: true})
+
+    console.log(this.state.started)
+
+    this.handleStartCheck()
+
+  }
 
   handleCheckFirstState = () => {
 
@@ -859,17 +868,22 @@ class App extends React.Component {
     
   }
 
+  handleStartCheck = () => {
+    this.state.started ? this.handleNewCombo() : console.log("not started")
+  }
+
 
   handleStart = () => {
     // this.setState({
     //   started: true
     // })
-    
-    this.handleNewCombo()
+    this.handleStartSwitch()
+    // this.handleNewCombo()
 
   }
 
   handleStop = () => {
+    this.handleStartSwitch()
     this.setState({
       strike_one: "",
       strike_two: "",
